@@ -14,6 +14,41 @@ p, h1 {
   padding: 0
 }
 
+.modelPro {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .6);
+  position: fixed;
+  z-index: 99999999999999;
+  display: none;
+}
+
+.mainBox {
+  width: 88vw;
+  height: 94.45vh;
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  margin-left: -44vw;
+  margin-top: -47.22vh;
+  background-color: #fff;
+  border-radius: 2vw;
+  overflow: scroll;
+}
+
+.mainBox img:first-child {
+  width: 88vw;
+  margin-top: 3vh;
+}
+
+.mainBox img:first-child+img {
+  position: fixed;
+  top: 4vh;
+  width: 8vw;
+  height: 8vw;
+  right: 8vw
+}
+
 .proItem {
   padding: 2.07vh 2.67vw 0 2.67vw;
   background-color: rgba(0, 0, 0, .2);

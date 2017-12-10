@@ -10,3 +10,9 @@ $('.model').on('touchend', () => {
 $('.loginBtn').on('touchend', () => {
   //alert(123)
 });
+$('.proLink,.proImg').on('touchend', () => {
+  $('.modelPro').fadeIn(222)
+});
+$('#closeBtn').on('touchend', () => {
+  $('.modelPro').fadeOut(222)
+})
