@@ -8,17 +8,12 @@
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
 	<title>振兴扶贫</title>
-	<!--引入pageSlider所需样式表-->
 	<link rel="stylesheet" href="./src/css/pageSlider.css">
-	<!--自己的css-->
 	<link rel="stylesheet" href="./src/css/other.css">
-	<!--引入zepto.js-->
 	<script src="http://cdn.bootcss.com/zepto/1.1.4/zepto.js"></script>
-	<!--引入pageSlider.js文件-->
 	<script src="./src/js/pageSlider.js"></script>
 
 	<body>
-		<!--DOM结构-->
 		<div class="Music">
 			<div class="MusicPlaySound">
 				<img class="MusicPlayProcess rotate MusicPicButton" src="./src/images/timg.png" />
@@ -60,21 +55,12 @@
 			<div class="fireMove" style="background-image:url('./src/images/fireImages/fire0.png')"></div>
 			<img class="lightFireBtn" src="./src/images/lightFireBtn.png" />
 		</div>
-		<div class="section sec5 bg01" style="background-color:#FF8ECE;"></div>
-		<div class="section sec6" style="background-color:#ACDCED;">6</div>
 
 		<script>
-			//$(function(){
 			var pageSlider = PageSlider.case({
 				startPage: 1,
 				range: 70
 			});
-			//});
-
-			//a标签无法触发跳转的问题用以下代码
-			// $(".to-form-link>a").on('touchend', function() {
-			// 	location.replace($(this).attr("href"));
-			// });
 			$('#btn').on('touchend', () => {
 				pageSlider.go(1);
 			})
